@@ -1,0 +1,19 @@
+{
+  "name": "requests-system",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": ["node", "express", "postgres"],
+  "author": "Your Name",
+  "license": "ISC",
+  "description": "Simple request management system",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "pg": "^8.14.1",
+    "nodemon": "^3.1.9"
+  }
+}
