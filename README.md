@@ -54,8 +54,8 @@ module.exports = pool;
 
 Описание: Этот файл определяет все маршруты (эндпоинты) REST API для управления обращениями. Включает обработку ошибок с помощью try/catch, а также проверку типов данных для входящих запросов.
 
-```
 
+```
 const express = require("express");
 const pool = require("./db");
 
@@ -200,7 +200,6 @@ module.exports = router;
 Описание: Главный файл приложения, который запускает сервер Express.js и подключает маршруты.
 
 ```
-
 const express = require("express");
 const routes = require("./routes");
 
@@ -210,5 +209,5 @@ app.use("/api", routes);
 
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
+```
 Роль: Инициализирует сервер, парсит JSON в теле запросов и привязывает маршруты под префикс /api.
